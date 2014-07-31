@@ -1,0 +1,27 @@
+{
+    "node": true,
+    "browser": true,
+    "esnext": true,
+    "bitwise": false,
+    "curly": false,
+    "eqeqeq": true,
+    "eqnull": true,
+    "immed": true,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "undef": true,
+    "strict": false,
+    "trailing": false,
+    "smarttabs": true,
+    "globals": {
+        "TousLeTemps": true,
+        "jQuery": true,
+        "$": true,
+        "Ember": true,
+        "Em": true,
+        "Handlebars": true,
+        "DS": true,
+        "I18n": true
+    }
+}

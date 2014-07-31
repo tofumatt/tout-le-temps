@@ -1,0 +1,9 @@
+<h1>Timezones</h1>
+
+<ul>
+ {{#each model}}
+ <li>{{#link-to 'timezone' this}}{{this.id}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
