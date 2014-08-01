@@ -15,6 +15,7 @@
     "grunt-contrib-imagemin": "~0.2.0",
     "grunt-contrib-stylus": "^0.16.0",
     "grunt-contrib-watch": "~0.5.2",
+    "grunt-gh-pages": "^0.9.1",
     "grunt-rev": "~0.1.0",
     "grunt-usemin": "~0.1.12",
     "grunt-mocha": "~0.4.1",
