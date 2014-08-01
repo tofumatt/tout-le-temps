@@ -1,15 +1,20 @@
 <x-layout>
   <header>
     <x-appbar>
-      <button>&lt;</button>
       <h1>{{t app.title}}</h1>
-      <button>?</button>
     </x-appbar>
   </header>
   <section>
     {{outlet}}
   </section>
   <footer>
-    &copy;
+    <x-tabbar>
+      <x-tabbar-tab>
+        {{#link-to 'clock'}}Clock{{/link-to}}
+      </x-tabbar-tab>
+      <x-tabbar-tab>
+        {{#link-to 'timezones'}}Timezones{{/link-to}}
+      </x-tabbar-tab>
+    </x-tabbar>
   </footer>
 </x-layout>

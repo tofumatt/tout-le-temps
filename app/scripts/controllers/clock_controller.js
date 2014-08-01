@@ -1,3 +1,4 @@
+/*global moment:true*/
 TousLeTemps.ClockController = Ember.ObjectController.extend({
     init: function() {
         // Update the time.
@@ -12,10 +13,16 @@ TousLeTemps.ClockController = Ember.ObjectController.extend({
 
         // Update the time every second.
         setTimeout(function() {
-            _this.set('localTime', new Date().toLocaleTimeString());
+            _this.set('localTime', moment().format('h:mm:ss a'));
+
+            _this.get('model').forEach(function(model) {
+                model.set('time',
+                          moment().tz(model.get('name')).format('h:mm:ss a'));
+            });
+
             _this.updateTime();
         }, 1000);
     },
 
-    localTime: new Date().toLocaleTimeString()
+    localTime: moment().format('h:mm:ss a')
 });
