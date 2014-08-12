@@ -1,4 +1,4 @@
-tous-le-temps
+tout-le-temps
 =============
 
 Rec Room walkthrough app with timezone models and a dynamic clock view.
