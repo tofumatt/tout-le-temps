@@ -1,6 +1,7 @@
 node_modules
 temp
 dist
+.grunt
 .sass-cache
 .tmp
 app/bower_components
